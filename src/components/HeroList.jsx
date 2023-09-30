@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getBrandList, getHeroList } from "@/utilities/api";
 import BrandCarousal from "./BrandCarousal";
+import Image from "next/image";
 
 export default async function HeroList() {
 
@@ -40,33 +41,41 @@ export default async function HeroList() {
                 <div className="w-full md:w-1/2 px-4">
                   <div className="flex flex-wrap lg:mb-4 lg:ml-6">
                     <div className="w-1/3 md:w-1/2 lg:w-1/3 h-32 lg:h-64 p-2">
-                      <img
+                      <Image
                         className="w-full h-full object-cover rounded-2xl shadow-lg"
                         src={HeroList?.image1}
                         alt=""
+                        width={500}
+                        height={240}
                       />
                     </div>
                     <div className="w-2/3 md:w-1/2 lg:w-2/3 h-32 lg:h-64 p-2">
-                      <img
+                      <Image
                         className="w-full h-full object-cover rounded-2xl shadow-lg"
                         src={HeroList?.image2}
                         alt=""
+                        width={500}
+                        height={240}
                       />
                     </div>
                   </div>
                   <div className="flex flex-wrap lg:mb-4 lg:mr-6">
                     <div className="w-2/3 md:w-1/2 lg:w-2/3 h-32 lg:h-64 p-2">
-                      <img
+                      <Image
                         className="w-full h-full object-cover rounded-2xl shadow-lg"
                         src={HeroList?.image3}
                         alt=""
+                        width={500}
+                        height={240}
                       />
                     </div>
                     <div className="w-1/3 md:w-1/2 lg:w-1/3 h-32 lg:h-64 p-2">
-                      <img
+                      <Image
                         className="w-full h-full object-cover rounded-2xl shadow-lg"
                         src={HeroList?.image4}
                         alt=""
+                        width={500}
+                        height={240}
                       />
                     </div>
                   </div>
@@ -74,11 +83,6 @@ export default async function HeroList() {
               </div>
             </div>
           </div>
-          {/* <img
-            className="hidden lg:block absolute inset-0 w-full"
-            src="atis-assets/background/lines.svg"
-            alt=""
-          /> */}
           <BrandCarousal brands={brands} />
         </section>
       }
