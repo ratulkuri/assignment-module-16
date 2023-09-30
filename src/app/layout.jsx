@@ -6,6 +6,7 @@ import { Poppins } from 'next/font/google';
 import Header from "@/components/NavBar/Header";
 
 import NextTopLoader from 'nextjs-toploader';
+import { getSiteMeta } from "@/utilities/api";
 
 const avenir = localFont({
   src: [
@@ -26,8 +27,14 @@ const poppins = Poppins({
 
 export async function generateMetadata() {
   // SEO DATA FETCH
+  const siteMetaData = await getSiteMeta('home');
   return {
-    title: "Home",
+    title: siteMetaData?.title || "Design Agency",
+    description: siteMetaData?.description,
+    keywords: siteMetaData?.keywords,
+    image: siteMetaData?.image,
+    url: "https://assignment-module-16.vercel.app",
+    type: "website",
   };
 }
 

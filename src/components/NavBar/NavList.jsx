@@ -31,8 +31,8 @@ const NavList = () => {
                 color="blue-gray"
                 className="p-1 font-medium font-poppin"
             >
-                <Link href="/service" className="nav-link flex items-center">
-                    Service
+                <Link href="/services" className="nav-link flex items-center">
+                    Services
                 </Link>
             </Typography>
             <Typography
@@ -41,8 +41,8 @@ const NavList = () => {
                 color="blue-gray"
                 className="p-1 font-medium font-poppin"
             >
-                <Link href="/project" className="nav-link flex items-center">
-                    Project
+                <Link href="/projects" className="nav-link flex items-center">
+                    Projects
                 </Link>
             </Typography>
             <Typography
@@ -51,7 +51,7 @@ const NavList = () => {
                 color="blue-gray"
                 className="p-1 font-medium font-poppin"
             >
-                <Link href="/testimonial" className="nav-link flex items-center">
+                <Link href="/testimonials" className="nav-link flex items-center">
                     Testimonials
                 </Link>
             </Typography>

@@ -92,3 +92,14 @@ export const getTestimonialList = async () => {
     return data;
 }
 
+
+export const getSiteMeta = async (page) => {
+    const url = `${process.env.BASE_URL}/api/SiteMeta/${page}`;
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(response.statusText);
+    }
+    const data = await response.json();
+    return data[0];
+}
+
