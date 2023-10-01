@@ -3,7 +3,7 @@ import Image from "next/image"
 const ServiceCard = ({service}) => {
   return (
     <>
-        <a href="#" className="font-poppin block theme-shadow p-4 md:p-8 rounded-2xl">
+        <div className="font-poppin block theme-shadow p-4 md:p-8 rounded-2xl">
             <h3 className="text-[26px] font-semibold mb-5">{service?.title}</h3>
             {
                 service?.des &&
@@ -51,7 +51,7 @@ const ServiceCard = ({service}) => {
                     </div>
                 </div>
             </div>
-        </a>
+        </div>
     </>
   )
 }
