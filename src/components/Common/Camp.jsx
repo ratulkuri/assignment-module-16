@@ -1,6 +1,7 @@
+import Link from "next/link";
 
 
-export const Camp = ({ title }) => {
+export const Camp = ({ title, pagePath = "/" }) => {
   return (
     <>
       <section className="page-header pt-20 lg:pt-40 pb-6 lg:pb-12 px-4 bg-theme-white">
@@ -10,9 +11,9 @@ export const Camp = ({ title }) => {
           </h1>
           <ul className="flex text-gray-500 text-sm lg:text-sm pb-6 md:pb-12 wow animate__animated animate__fadeIn animated">
             <li className="inline-flex items-center">
-              <a href="#" className="hover:text-blue-500 text-gray-800">
+              <Link href="/" className="hover:text-blue-500 text-gray-800">
                 Home
-              </a>
+              </Link>
               <svg
                 fill="currentColor"
                 viewBox="0 0 20 20"
@@ -26,9 +27,9 @@ export const Camp = ({ title }) => {
               </svg>
             </li>
             <li className="inline-flex items-center">
-              <a href="#" className="hover:text-blue-500 text-gray-800">
+              <Link href={pagePath ? pagePath : "#"} className="hover:text-blue-500 text-gray-800">
                 {title}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

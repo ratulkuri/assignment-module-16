@@ -20,7 +20,7 @@ export async function generateMetadata() {
 const Page = () => {
   return (
     <>
-      <Camp title={"Testimonials"} />
+      <Camp title={"Testimonials"} pagePath={"/testimonials"} />
 
       <Testimonial />
       <Subscribe />
