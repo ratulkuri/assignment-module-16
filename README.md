@@ -42,4 +42,5 @@ The project structure is organized to maintain a clean and understandable codeba
 
 1. Clone this repository.
 2. Install dependencies: `npm install`.
-3. Run the development server: `npm run dev`.
+3. Copy `.env.example` file to `.env` and configure required environment variables.
+4. Run the development server: `npm run dev`.
