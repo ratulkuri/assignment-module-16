@@ -1,6 +1,6 @@
 # Assignment of Course Module 16
 
-This project is a dynamic frontend for an agency website built using Next.js 13.
+This project is a mobile-responsive agency website, featuring a dynamic frontend built with Next.js 13.
 
 ## <a href="https://assignment-module-16.vercel.app" target="_blank" rel="noopener noreferrer">SEE DEMO</a>
 
